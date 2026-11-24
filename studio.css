@@ -1,0 +1,20 @@
+html { scroll-padding-top: 82px; }
+body { hyphens: none; }
+.s-demo-label, .s-widget-note { font-size: .82rem; color: var(--c-ink-soft); }
+.s-widget-note { margin: 0; }
+.s-total { margin: 0; }
+.s-rating a { text-underline-offset: 4px; }
+.s-hero__bg { width: min(100vw, 100dvw); }
+.s-dock { padding-bottom: max(8px, env(safe-area-inset-bottom)); }
+@media (max-width: 960px) {
+  .s-hero__text { min-width: 0; }
+  .s-hero__photo { display: block; margin-top: 18px; }
+  .s-hero__photo img { aspect-ratio: 1.9; }
+  .s-hero__bg { display: none; }
+  .s-hero { gap: 24px; }
+}
+@media (max-width: 640px) {
+  .s-demo-label { display: none; }
+  .s-bar__brand { white-space: normal; overflow: visible; text-overflow: clip; line-height: 1.15; }
+  .s-bar__brand i { flex: 0 0 .75em; }
+}
